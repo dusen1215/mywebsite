@@ -1,0 +1,210 @@
+<!DOCTYPE_HTML>
+<html>
+    <title>Jordan Dusenbury</title>
+    <head>
+    </head>
+    <style>
+        body{
+            background-color: #A8DADC;
+        }
+        .sidebar{
+            background-color: #0077B6;
+            border: 5px;
+            border-color: black;
+            border-style:double;
+            margin-top: 10px;
+            
+        }
+        
+        .sidebar ul li{
+            padding-bottom: 130px;
+            padding-top: 5px;
+            
+        }
+        
+        .sidebar ul button{
+            background-color:#F7FFF7;
+            color: black;
+            font-family: 'courier';
+            font-size:30;
+            
+        }
+        
+        #headshot{
+            border:2px;
+            border-color:black;
+            border-style: solid;
+        }
+        
+        .harold{
+           background-size: 100%;
+           background-color: #CED4DA;
+           margin: 0px;
+           padding: 0px;
+           padding-bottom:400px;
+           margin-left: -10px;
+           margin-right: -10px;
+           padding-left: 11px;
+           position: relative;
+           border-bottom: 3px;
+           border-bottom-color: deepskyblue;
+           border-bottom-style: ridge;
+           border-top:2px;
+           border-top-color: black;
+           border-top-style: groove;
+           
+        }
+        #headshot{
+           position: absolute;
+           display: block;
+           left: 3%;
+           top: 5%;
+           object-position: center;
+           
+        }
+        
+        .texts{
+            position: absolute;
+            top:-5%;
+            right: 10%;
+            text-align: center;
+            font-family: 'Courier New', sans-serif;
+            color:ghostwhite;
+            margin:0;
+            text-shadow:2px 2px 3px black;
+        }
+        
+        #ab2{
+            display:none;
+            position:absolute;
+            font-family: 'IBM Plex Serif', serif;
+            line-height: 30px;
+            width:850px;
+            top: 50%;
+            right:10%;
+            font-size: 32px;
+            height: 55%;
+           
+            
+            
+        }
+        #ab:hover + #ab2{
+            display:block;
+            color:black;
+            
+            
+        }
+        #ab{
+            border-style: solid;
+            border: 10px;
+            border-color: black;
+            
+        }
+        #co2{
+            display:none;
+            position: absolute;
+            top:50%;
+            right:10%;
+            
+        }
+        
+        .li{
+            
+           
+            display:block;
+        }
+        #co{
+           cursor: pointer;
+            
+        }
+        .dropdown{
+        
+            display: inline-block;
+           
+        }
+        
+        .dropdown-content{
+            display: none;     
+            background-color:black;
+            width: auto;
+            position: absolute;
+            top: 87%;
+            left: 10.5%;
+           
+        }
+        .dropdown-content a{
+            font-size: 30px;
+            color:white;
+            display:block;
+          
+            
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        
+        
+    </style>
+    <body>
+        <div class="harold">
+            <img  src="COMMERCIAL.jpg" height="275" width=auto id=headshot >
+            <div class="texts">
+            <h1 style="font-size: 70px">JORDAN DUSENBURY</h1>
+            <h3 style="font-size: 40px">Full-Stack Web Developer</h3>
+            <h3 style="font-size: 40px">Film Editor</h3>
+            </div>
+        </div>
+        <div class="sidebar">
+          <ul style="list-style-type: none">  
+            <li><button id="ab">ABOUT</button>
+                <p id="ab2" style="background-color: aliceblue;  bac-style: dashed; border:7px; border-color: black;">   Continuing to practice coding every day, I will guide you thorough your unique vision to share.
+                <br>
+                <br>
+                I recently obtained my certification in Full-Stack Web Development from the New York City College of Technology. I am currently excelling my developer skills with Codeacademy.
+                <br>
+                <br>
+                With a background of variety from 10 years of customer service and hospitality and 5 years in entertainment from off-broadway to network television, I will pursuit you into the direction that you desire your website to go.</p></li>
+            <li><button onclick=myfunction() id="co">CONTACT</button></li>
+            <div id="co2">    
+                <h1 style="font-family: 'Red Rose', cursive;">Location</h1>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d808538.8247759613!2d-98.00414916184901!3d37.66437045642843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87badb6ad27f182d%3A0x9396d5bf74d33d3e!2sWichita%2C%20KS!5e0!3m2!1sen!2sus!4v1585247233444!5m2!1sen!2sus" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                <div class="contact">
+                    <div class="email" style="font-size: 28px; font-family: 'Red Rose', cursive;"> <a href="mailto:dusen1215@gmail.com">dusen1215@gmail.com</a></div>in
+                <div class="phone" style="font-size: 28px; font-family: 'Red Rose', cursive;">3166171215</div>           
+                </div>
+            </div>
+              <div class="dropdown">
+                  <li><button class="li">SITES</button></li>
+                <div class="dropdown-content">
+                <a href="https://www.linkedin.com/in/jordan-dusenbury-87161a112">LinkedIn</a>
+                    <br>
+                    <br>
+                <a href="https://www.youtube.com/watch?v=ppT4AQWxLuc">Film Edit</a>
+                    <br>
+                    <br>
+                <a href="http://citytechcedev.org/fssa/jdusenbury/">BINGE</a>
+                    <br>
+                    <br>
+                </div>    
+            </div>
+          </ul>
+        </div>
+            
+        
+    </body>
+    
+    <script>
+        function myfunction() {
+         var x = document.getElementById("co2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+            x.style.display = "none";
+            }
+        }
+</script>
+    
+    
+    
+    
+    
